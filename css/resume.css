@@ -1,0 +1,66 @@
+.resume {
+  margin-top: 50px;
+}
+
+.resume h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: unset;
+}
+
+.resume_subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.resume_table {
+  padding: 50px;
+  text-align: center;
+}
+
+.table_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.table_row:first-child {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.row_date {
+  width: 10%;
+}
+.row_info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.row_info p {
+  width: calc(100%/5);
+}
+
+.row_info-format {
+  font-style: italic;
+}
+
+.row_info-title a {
+  font-weight: bold;
+  color: #222222;
+}
+
+.row_info-title {
+  font-weight: bold;
+  color: #222222;
+}
+
+.row_info-director {
+  color: #888888;
+}
+
+.row_info-production {
+  color: #888888;
+}

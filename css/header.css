@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 55px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+}
+
+.navbar a:last-child {
+  padding-right: 0;
+}
