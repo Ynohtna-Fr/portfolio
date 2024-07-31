@@ -22,6 +22,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
-    "fslightbox": "^3.4.1"
+    "fslightbox": "^3.4.1",
+    "microtip": "^0.2.2"
   }
 }

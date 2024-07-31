@@ -64,3 +64,26 @@
 .row_info-production {
   color: #888888;
 }
+
+
+@media only screen and (max-width: 35em) {
+  .resume_table {
+    padding: 50px 0;
+  }
+
+  .row_info {
+    flex-direction: column;
+  }
+
+  .row_info p {
+    width: 100%;
+  }
+
+  .row_info-director::before {
+    content: "Réal : ";
+  }
+
+  .row_info-production::before {
+    content: "Prod : ";
+  }
+}

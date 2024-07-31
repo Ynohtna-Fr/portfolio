@@ -1,12 +1,12 @@
 /* Custom import */
-
-@import "fonts.css";
+@import "lib/microtip.min.css";
 @import "header.css";
 @import "about.css";
 @import "gallery.css";
 @import "vod.css";
 @import "resume.css";
-
+@import "footer.css";
+@import "fonts.css";
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -25,12 +25,16 @@ html {
   font-size: 1em;
   line-height: 1.4;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 2rem;
 }
 
+.italic {
+  font-style: italic;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -181,8 +185,11 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  .hidden-sm {
+    display: none !important;
+  }
 }
 
 @media print,

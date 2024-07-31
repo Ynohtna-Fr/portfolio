@@ -1,18 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Portfolio comédien Anthony Adam.</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <meta name="description" content="Portfolio acteur/comédien Anthony Adam">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta property="og:title" content="Portfolio Anthony Adam">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -25,9 +21,9 @@
 <body>
 <header>
   <nav class="navbar">
-    <a href="#">Photos</a>
-    <a href="#">Démo</a>
-    <a href="#">CV</a>
+    <a href="#photo">Photos</a>
+    <a href="#demo">Démo</a>
+    <a href="#resume">CV</a>
   </nav>
 </header>
 <main>
@@ -41,7 +37,12 @@
         <p>Paris, Strasbourg</p>
         <p><a href="mailto:contact@anthony-adam.fr">contact@anthony-adam.fr</a></p>
         <p><a href="tel:0652728018">0652728018</a></p>
-        <p>Âge de jeu : 20-27 ans.</p>
+        <p>Âge de jeu : 20-27 ans.
+          <br>
+          1m84.
+          <br>
+          Permis B.
+        </p>
       </div>
     </div>
     <div class="about_img">
@@ -51,7 +52,7 @@
 
 
   <!-- PHOTO -->
-  <div class="gallery">
+  <div id="photo" class="gallery">
     <h2>Photos</h2>
     <div class="gallery_mansory">
       <ul>
@@ -65,12 +66,12 @@
             <img alt="Test" src="img/portrait_profil.jpg">
           </a>
         </li>
-        <li>
+        <li class="hidden-sm">
           <a data-fslightbox="gallery" href="img/portraint_lunette.jpg">
             <img alt="Test" src="img/portraint_lunette.jpg">
           </a>
         </li>
-        <li>
+        <li class="hidden-sm">
           <a data-fslightbox="gallery" href="img/trois-quart.jpg">
             <img alt="Test" src="img/trois-quart.jpg">
           </a>
@@ -80,9 +81,9 @@
             <img alt="Test" src="img/caro-seated.jpg">
           </a>
         </li>
-        <li>
-          <a data-fslightbox="gallery" href="img/front_poitrine.jpg">
-            <img alt="Test" src="img/front_poitrine.jpg">
+        <li class="hidden-sm">
+          <a data-fslightbox="gallery" href="img/close-up.jpg">
+            <img alt="Test" src="img/close-up.jpg">
           </a>
         </li>
       </ul>
@@ -91,19 +92,20 @@
 
 
   <!--  VIDEO-->
-  <div class="vod">
+  <div id="demo" class="vod">
     <h2>Démo</h2>
     <div class="vod_container">
-      <iframe src="https://player.vimeo.com/video/861573823?dnt=1" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/992394777?dnt=1" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen title="showreel"></iframe>
     </div>
   </div>
 
+
   <!--  CV-->
-  <div class="resume">
+  <div id="resume" class="resume">
     <h2>Expériences</h2>
     <p class="resume_subtitle">Cliquez sur un titre souligné pour voir le projet</p>
     <div class="resume_table">
-      <div class="table_row">
+      <div class="table_row hidden-sm">
         <div class="row_date">
           <p>Date</p>
         </div>
@@ -118,16 +120,84 @@
 
       <div class="table_row">
         <div class="row_date">
+          <p>2024</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage (Marathon 48H)</p>
+          <p class="row_info-title">
+            <span aria-label="Coup de coeur du jury - Marathon 48H Strasbourg" data-microtip-position="top" role="tooltip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.921 3c-.368 4.506-1.953 7.23-3.372 9.669-.577.993-1.136 1.953-1.543 2.95-.408-.998-.969-1.959-1.548-2.953-1.422-2.437-3.011-5.161-3.379-9.666h9.842zm2.079-2h-14c0 9.803 5.105 13.053 5.604 17h2.805c.497-3.947 5.591-7.197 5.591-17zm-7 11.547c-1.125-2.563-1.849-5.599-1.857-8.547h-1.383c.374 3.118 1.857 7.023 3.24 8.547zm1.438 6.453h-2.866c-.202 1.187-.63 2.619-2.571 2.619v1.381h8v-1.381c-1.999 0-2.371-1.432-2.563-2.619zm7.08-1.596c-1.402-.634-2.609-.19-3.354.293.745-.484 1.603-1.464 1.595-3.003-2.591 1.038-2.295 2.496-2.765 3.345-.315.571-1.007.274-1.007.274l-.213.352c.365.193.989.319 1.716.319 1.307 0 2.949-.409 4.028-1.58zm2.444-4.022c-1.382.097-2.118 1.061-2.501 1.763.383-.702.614-1.942-.05-3.158-1.61 1.929-.752 2.958-.762 3.831-.004.427-.49.417-.49.417l.007.404c.314-.041 3.154-.717 3.796-3.257zm1.036-3.87c-1.171.426-1.56 1.473-1.718 2.175.158-.702.041-1.863-.835-2.75-.915 2.068.082 2.745.29 3.503.102.371-.325.606-.325.606l.29.179c.061-.029 2.385-1.332 2.298-3.713zm-.2-3.792c-.903.666-1.017 1.688-.974 2.335-.042-.646-.395-1.639-1.376-2.182-.264 2.018.769 2.349 1.142 2.95.182.294.023.658.023.658l.284-.019s.026-.127.169-.442c.291-.644 1.255-1.334.732-3.3zm-1.901-2.72s-.273.984-.045 1.732c.244.798.873 1.361.873 1.361s.34-.873.099-1.733c-.222-.792-.927-1.36-.927-1.36zm-12.67 15.665l-.213-.352s-.691.297-1.007-.274c-.47-.849-.174-2.307-2.765-3.345-.008 1.539.85 2.52 1.595 3.003-.745-.484-1.952-.927-3.354-.293 1.078 1.171 2.721 1.581 4.028 1.581.727-.001 1.35-.127 1.716-.32zm-4.393-2.027l.007-.404s-.486.01-.49-.417c-.009-.873.848-1.901-.762-3.831-.664 1.216-.433 2.457-.05 3.158-.383-.702-1.12-1.666-2.501-1.763.642 2.541 3.482 3.217 3.796 3.257zm-2.533-3.413l.29-.179s-.427-.236-.325-.606c.208-.758 1.205-1.435.29-3.503-.876.887-.994 2.048-.835 2.75-.158-.702-.546-1.749-1.718-2.175-.088 2.381 2.236 3.684 2.298 3.713zm-1.366-4.204c.143.315.169.442.169.442l.284.019s-.159-.364.023-.658c.373-.601 1.405-.933 1.142-2.95-.983.542-1.335 1.534-1.377 2.181.042-.647-.072-1.67-.974-2.335-.523 1.966.441 2.656.733 3.301zm.241-4.661c-.24.86.099 1.733.099 1.733s.629-.563.873-1.361c.228-.748-.045-1.732-.045-1.732s-.705.568-.927 1.36z"/></svg>
+              <a target="_blank" href="https://www.youtube.com/watch?v=MfvAaSpHfLQ">
+                Opération Pizza
+              </a>
+            </span>
+          </p>
+          <p class="row_info-role">Julien <span class="italic">(Principal)</span></p>
+          <p class="row_info-director">Anthony Marzin</p>
+          <p class="row_info-production">Pour une poignée de pixels</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2024</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            <span aria-label="M de bronze - Festival 3M Strasbourg" data-microtip-position="top" role="tooltip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.921 3c-.368 4.506-1.953 7.23-3.372 9.669-.577.993-1.136 1.953-1.543 2.95-.408-.998-.969-1.959-1.548-2.953-1.422-2.437-3.011-5.161-3.379-9.666h9.842zm2.079-2h-14c0 9.803 5.105 13.053 5.604 17h2.805c.497-3.947 5.591-7.197 5.591-17zm-7 11.547c-1.125-2.563-1.849-5.599-1.857-8.547h-1.383c.374 3.118 1.857 7.023 3.24 8.547zm1.438 6.453h-2.866c-.202 1.187-.63 2.619-2.571 2.619v1.381h8v-1.381c-1.999 0-2.371-1.432-2.563-2.619zm7.08-1.596c-1.402-.634-2.609-.19-3.354.293.745-.484 1.603-1.464 1.595-3.003-2.591 1.038-2.295 2.496-2.765 3.345-.315.571-1.007.274-1.007.274l-.213.352c.365.193.989.319 1.716.319 1.307 0 2.949-.409 4.028-1.58zm2.444-4.022c-1.382.097-2.118 1.061-2.501 1.763.383-.702.614-1.942-.05-3.158-1.61 1.929-.752 2.958-.762 3.831-.004.427-.49.417-.49.417l.007.404c.314-.041 3.154-.717 3.796-3.257zm1.036-3.87c-1.171.426-1.56 1.473-1.718 2.175.158-.702.041-1.863-.835-2.75-.915 2.068.082 2.745.29 3.503.102.371-.325.606-.325.606l.29.179c.061-.029 2.385-1.332 2.298-3.713zm-.2-3.792c-.903.666-1.017 1.688-.974 2.335-.042-.646-.395-1.639-1.376-2.182-.264 2.018.769 2.349 1.142 2.95.182.294.023.658.023.658l.284-.019s.026-.127.169-.442c.291-.644 1.255-1.334.732-3.3zm-1.901-2.72s-.273.984-.045 1.732c.244.798.873 1.361.873 1.361s.34-.873.099-1.733c-.222-.792-.927-1.36-.927-1.36zm-12.67 15.665l-.213-.352s-.691.297-1.007-.274c-.47-.849-.174-2.307-2.765-3.345-.008 1.539.85 2.52 1.595 3.003-.745-.484-1.952-.927-3.354-.293 1.078 1.171 2.721 1.581 4.028 1.581.727-.001 1.35-.127 1.716-.32zm-4.393-2.027l.007-.404s-.486.01-.49-.417c-.009-.873.848-1.901-.762-3.831-.664 1.216-.433 2.457-.05 3.158-.383-.702-1.12-1.666-2.501-1.763.642 2.541 3.482 3.217 3.796 3.257zm-2.533-3.413l.29-.179s-.427-.236-.325-.606c.208-.758 1.205-1.435.29-3.503-.876.887-.994 2.048-.835 2.75-.158-.702-.546-1.749-1.718-2.175-.088 2.381 2.236 3.684 2.298 3.713zm-1.366-4.204c.143.315.169.442.169.442l.284.019s-.159-.364.023-.658c.373-.601 1.405-.933 1.142-2.95-.983.542-1.335 1.534-1.377 2.181.042-.647-.072-1.67-.974-2.335-.523 1.966.441 2.656.733 3.301zm.241-4.661c-.24.86.099 1.733.099 1.733s.629-.563.873-1.361c.228-.748-.045-1.732-.045-1.732s-.705.568-.927 1.36z"/></svg>
+              <a target="_blank" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q">
+                Lui & Elle
+              </a>
+            </span>
+          </p>
+          <p class="row_info-role">Lui <span class="italic">(Principal)</span></p>
+          <p class="row_info-director">Joël Gangloff</p>
+          <p class="row_info-production">Autoproduit</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2024</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            Chute Libre
+          </p>
+          <p class="row_info-role">Victor <span class="italic">(secondaire)</span></p>
+          <p class="row_info-director">Eloïse Hoedt</p>
+          <p class="row_info-production">Autoproduit</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2024</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage (nikon)</p>
+          <p class="row_info-title">
+            Maxime
+          </p>
+          <p class="row_info-role">Vincent <span class="italic">(secondaire)</span></p>
+          <p class="row_info-director">Baptiste Grampp</p>
+          <p class="row_info-production">BDI-production</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
           <p>2023</p>
         </div>
         <div class="row_info">
           <p class="row_info-format">Pilote série</p>
           <p class="row_info-title">
-            <a data-fslightbox="video" href="#">
-              Côté Loge
-            </a>
+            Côté Loge
           </p>
-          <p class="row_info-role">Arthur (principal)</p>
+          <p class="row_info-role">Arthur <span class="italic">(principal)</span></p>
           <p class="row_info-director">Joël Gangloff</p>
           <p class="row_info-production">BDI-production</p>
         </div>
@@ -138,22 +208,239 @@
           <p>2023</p>
         </div>
         <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            Evie
+          </p>
+          <p class="row_info-role">Pierre <span class="italic">(secondaire)</span></p>
+          <p class="row_info-director">Arpiné Stepanyan</p>
+          <p class="row_info-production">Autoproduit</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
           <p class="row_info-format">CLIP</p>
           <p class="row_info-title">
-            <a data-fslightbox="video" href="https://www.youtube.com/watch?v=aNq0oEWlOIQ">
+            <a target="_blank" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q">
               Ladies are gone
             </a>
           </p>
-          <p class="row_info-role">Pierre Ado (secondaire)</p>
+          <p class="row_info-role">Pierre Ado <span class="italic">(secondaire)</span></p>
           <p class="row_info-director">Germain Lalot</p>
           <p class="row_info-production">Pour une poignée de pixels</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            <span aria-label="Finalisate - Concours Imagine TF1" data-microtip-position="top" role="tooltip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.921 3c-.368 4.506-1.953 7.23-3.372 9.669-.577.993-1.136 1.953-1.543 2.95-.408-.998-.969-1.959-1.548-2.953-1.422-2.437-3.011-5.161-3.379-9.666h9.842zm2.079-2h-14c0 9.803 5.105 13.053 5.604 17h2.805c.497-3.947 5.591-7.197 5.591-17zm-7 11.547c-1.125-2.563-1.849-5.599-1.857-8.547h-1.383c.374 3.118 1.857 7.023 3.24 8.547zm1.438 6.453h-2.866c-.202 1.187-.63 2.619-2.571 2.619v1.381h8v-1.381c-1.999 0-2.371-1.432-2.563-2.619zm7.08-1.596c-1.402-.634-2.609-.19-3.354.293.745-.484 1.603-1.464 1.595-3.003-2.591 1.038-2.295 2.496-2.765 3.345-.315.571-1.007.274-1.007.274l-.213.352c.365.193.989.319 1.716.319 1.307 0 2.949-.409 4.028-1.58zm2.444-4.022c-1.382.097-2.118 1.061-2.501 1.763.383-.702.614-1.942-.05-3.158-1.61 1.929-.752 2.958-.762 3.831-.004.427-.49.417-.49.417l.007.404c.314-.041 3.154-.717 3.796-3.257zm1.036-3.87c-1.171.426-1.56 1.473-1.718 2.175.158-.702.041-1.863-.835-2.75-.915 2.068.082 2.745.29 3.503.102.371-.325.606-.325.606l.29.179c.061-.029 2.385-1.332 2.298-3.713zm-.2-3.792c-.903.666-1.017 1.688-.974 2.335-.042-.646-.395-1.639-1.376-2.182-.264 2.018.769 2.349 1.142 2.95.182.294.023.658.023.658l.284-.019s.026-.127.169-.442c.291-.644 1.255-1.334.732-3.3zm-1.901-2.72s-.273.984-.045 1.732c.244.798.873 1.361.873 1.361s.34-.873.099-1.733c-.222-.792-.927-1.36-.927-1.36zm-12.67 15.665l-.213-.352s-.691.297-1.007-.274c-.47-.849-.174-2.307-2.765-3.345-.008 1.539.85 2.52 1.595 3.003-.745-.484-1.952-.927-3.354-.293 1.078 1.171 2.721 1.581 4.028 1.581.727-.001 1.35-.127 1.716-.32zm-4.393-2.027l.007-.404s-.486.01-.49-.417c-.009-.873.848-1.901-.762-3.831-.664 1.216-.433 2.457-.05 3.158-.383-.702-1.12-1.666-2.501-1.763.642 2.541 3.482 3.217 3.796 3.257zm-2.533-3.413l.29-.179s-.427-.236-.325-.606c.208-.758 1.205-1.435.29-3.503-.876.887-.994 2.048-.835 2.75-.158-.702-.546-1.749-1.718-2.175-.088 2.381 2.236 3.684 2.298 3.713zm-1.366-4.204c.143.315.169.442.169.442l.284.019s-.159-.364.023-.658c.373-.601 1.405-.933 1.142-2.95-.983.542-1.335 1.534-1.377 2.181.042-.647-.072-1.67-.974-2.335-.523 1.966.441 2.656.733 3.301zm.241-4.661c-.24.86.099 1.733.099 1.733s.629-.563.873-1.361c.228-.748-.045-1.732-.045-1.732s-.705.568-.927 1.36z"/></svg>
+              <a target="_blank" href="https://www.tf1.fr/tf1/concours-imagine/videos/ca-ira-97167919.html">
+                ça Ira
+              </a>
+            </span>
+          </p>
+          <p class="row_info-role">Conscience <span class="italic">(Principal)</span></p>
+          <p class="row_info-director">Emma F. Vignoles</p>
+          <p class="row_info-production">Autoproduit</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage (Marathon 48H)</p>
+          <p class="row_info-title">
+            <a target="_blank" href="https://youtu.be/HK9bkdUzovs">
+              CLAP CLAP
+            </a>
+          </p>
+          <p class="row_info-role">Présentateur <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Lotfi El Haiti</p>
+          <p class="row_info-production">BDI-production</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            505
+          </p>
+          <p class="row_info-role">Alex <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Esteban Ducez</p>
+          <p class="row_info-production">BDI-production</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Exercice</p>
+          <p class="row_info-title">
+            <a target="_blank" href="https://www.youtube.com/watch?v=NBgLEl6a6t8">
+              Un gars et une fille
+            </a>
+          </p>
+          <p class="row_info-role">Le gars <span class="italic">(principal)</span></p>
+          <p class="row_info-director">multiples</p>
+          <p class="row_info-production">3IS</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            <a target="_blank" href="https://youtu.be/yGYShPn-2IU?si=PxfB41ckkzvhWOCp">
+              DayDreaming
+            </a>
+          </p>
+          <p class="row_info-role">Noa <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Ambre Liehn</p>
+          <p class="row_info-production">BDI-production</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Comédie musical</p>
+          <p class="row_info-title">
+            Entre-Deux
+          </p>
+          <p class="row_info-role">Arthur <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Lotfi El Haiti</p>
+          <p class="row_info-production">BDI-production</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            Le dernier repas
+          </p>
+          <p class="row_info-role">Paul <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Zoé Guilbon</p>
+          <p class="row_info-production">Autoproduit</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            Chocolat
+          </p>
+          <p class="row_info-role">Eudes <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Thomas Duchemin & Victor Naproch</p>
+          <p class="row_info-production">Autoproduit</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            <a target="_blank" href="https://youtu.be/bqSR0Op9F1I?si=af0sfxRxwAL_DqOu">
+              Where is my love
+            </a>
+          </p>
+          <p class="row_info-role">Nathan <span class="italic">(secondaire)</span></p>
+          <p class="row_info-director">Baptiste Grampp</p>
+          <p class="row_info-production">BDI-production</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2023</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            <a target="_blank" href="https://youtu.be/AOyVLhAtnCo?si=NKIal64uNvCUKA39">
+              BetterLife
+            </a>
+          </p>
+          <p class="row_info-role">Benoît <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Felix Bousquet</p>
+          <p class="row_info-production">BDI-production</p>
+        </div>
+      </div>
+
+
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2022</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            <a target="_blank" href="https://youtu.be/OF12Ijpqj0k?si=RqVbldpOCRYLk7o4">
+              Comme Avant
+            </a>
+          </p>
+          <p class="row_info-role">William <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Esteban Ducez</p>
+          <p class="row_info-production">Autoproduit</p>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <div class="row_date">
+          <p>2022</p>
+        </div>
+        <div class="row_info">
+          <p class="row_info-format">Court-métrage</p>
+          <p class="row_info-title">
+            <a target="_blank" href="https://www.youtube.com/watch?v=K_r-e-PTxYg">
+              Pour Combien
+            </a>
+          </p>
+          <p class="row_info-role">Guillaume <span class="italic">(principal)</span></p>
+          <p class="row_info-director">Maxime Hollenwenger & Nathan Schniekert</p>
+          <p class="row_info-production">Autoproduit</p>
         </div>
       </div>
     </div>
   </div>
 </main>
-
-
+<footer>
+  <a target="_blank" href="legals.html">Mentions légales</a>
+</footer>
 </body>
 <script src="js/app.js"></script>
 

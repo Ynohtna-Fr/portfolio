@@ -4,6 +4,7 @@
   justify-content: space-between;
 }
 
+
 .about_info {
   display: flex;
   flex-direction: column;
@@ -35,4 +36,11 @@
   max-height: 85vh;
   width: 100%;
   object-fit: contain;
+}
+
+@media only screen and (max-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  .about {
+    flex-direction: column-reverse;
+  }
 }

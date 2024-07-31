@@ -1,0 +1,35 @@
+footer {
+  text-align: center;
+  margin: 30px 0;
+}
+footer a {
+  color: #222222;
+  font-weight: 300;
+}
+
+
+.footer_container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.footer_container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.footer_container h2 {
+  color: #555;
+  margin-top: 20px;
+}
+
+.footer_container p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.footer_container strong {
+  color: #333;
+}
