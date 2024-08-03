@@ -1,11 +1,4 @@
 /* Custom import */
-@import "lib/microtip.min.css";
-@import "header.css";
-@import "about.css";
-@import "gallery.css";
-@import "vod.css";
-@import "resume.css";
-@import "footer.css";
 @import "fonts.css";
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
@@ -29,12 +22,82 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 10px);
   margin: 0 2rem;
+  padding-bottom: 10px;
 }
 
 .italic {
   font-style: italic;
 }
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50vw;
+  gap: 3rem;
+}
+
+.about_info a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #222222;
+  font-size: 1.2rem;
+  text-line-through: single;
+  transition: font-size 0.1s ease-in-out;
+}
+
+.about_info a:hover {
+  font-size: 1.4rem
+}
+
+.about_img {
+  position: relative;
+  height: calc(95vh - 90px - 25px);
+}
+
+.about_img img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45vw;
+  height: 100%;
+  opacity: 0;
+  object-fit: contain;
+  transform: scaleX(1.03);
+  transition: transform .3s cubic-bezier(.37,1.03,.25,1),opacity .2s cubic-bezier(.07,.71,.25,1);
+  will-change: transform;
+}
+
+.about_img img.active {
+  opacity: 1;
+  transform: scaleX(1);
+  z-index: 5;
+}
+
+footer a {
+  color: #222222;
+  font-weight: 300;
+}
+
+
+@media only screen and (max-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+  .about_info {
+    max-width: unset;
+  }
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
