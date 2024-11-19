@@ -40,7 +40,7 @@
 }
 
 .row_info p {
-  width: calc(100%/5);
+  width: calc(100%/3);
 }
 
 .row_info-format {
